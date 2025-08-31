@@ -4,33 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>An Evening of Style</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: linear-gradient(to bottom right, #1a1a1a, #333);
-      color: #f5f5f5;
+      font-family: 'Cinzel Decorative', cursive;
+      background: linear-gradient(to bottom right, #000000, #0b3d2e);
+      color: gold;
       text-align: center;
       padding: 40px;
     }
     h1 {
-      font-size: 3em;
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
       margin-bottom: 10px;
-      color: #e0c68c;
+      color: gold;
+      text-shadow: 2px 2px 4px #000;
     }
     .details {
-      font-size: 1.2em;
+      font-size: 1.3em;
       line-height: 1.6;
-      max-width: 600px;
+      max-width: 650px;
       margin: 0 auto;
     }
     .highlight {
-      color: #e0c68c;
+      color: #b6ffb6;
       font-weight: bold;
     }
-    .icon {
-      font-size: 1.5em;
-      color: red;
+    .rsvp-button a {
+      display: inline-block;
+      background-color: gold;
+      color: black;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    .rsvp-button a:hover {
+      background-color: #e6c200;
+    }
+    a {
+      color: gold;
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 3em;
+      }
+      .details {
+        font-size: 1.1em;
+        padding: 0 20px;
+      }
+      .rsvp-button a {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
@@ -39,15 +71,20 @@
   <div class="details">
     <p><span class="highlight">Charles' Birthday Celebration</span></p>
     <p>📅 Sunday, September 28th, 2025</p>
-    <p>🕖 7:00 PM</p>
-    <p>📍 Our House (RSVP for address)</p>
+    <p>🕒 7:00 PM</p>
+    <p>📍 Our House (Please RSVP for the address)</p>
+    <div class="rsvp-button">
+      <a href="sms:+14042025731?body=RSVP for Charles' Party">RSVP via Text</a>
+    </div>
     <p>🎶 Live Band</p>
     <p>🍸 Open Bar with Top-Shelf Liquor</p>
-    <p>🍽️ Soul Food Catering by Delicious Yummy Shame</p>
-    <p>👗 Indoor/Outdoor Party – A light jacket may be needed</p>
-    <p class="icon">🚫 Guests must be 21 or older</p>
-    <p>💌 Hosted by Lytice – Wifey</p>
-    <p>🎁 Your presence and a readiness to have a great time!</p>
+    <p>🍽️ Soul Food Catering by <a href="https://www.deliciousyummyshame.com/" target="_blank">Delicious Yummy Shame</a></p>
+    <p>👗 Indoor/Outdoor Party – A light jacket may be needed 🧥</p>
+    <p>🚫 Guests must be 21 or older</p>
+    <p>❤️ Hosted by Lytice – Wifey</p>
+    <p>🎁 Your gift to us will be your presence and your readiness to have a great time!</p>
   </div>
 </body>
 </html>
+
+  
